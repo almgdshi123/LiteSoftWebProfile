@@ -14,13 +14,13 @@ const Experience = () => {
         <span>الخبرة</span>
       </div>
       <div className="achievement">
-        <div className="circle" style={{color: darkMode?'var(--orange)':''}}>20+</div>
+        <div className="circle" style={{color: darkMode?'var(--orange)':''}}>70+</div>
         <span  style={{color: darkMode?'white':''}}>انتهى </span>
         <span>المشاريع</span>
       </div>
       <div className="achievement">
-        <div className="circle" style={{color: darkMode?'var(--orange)':''}}>5+</div>
-        <span  style={{color: darkMode?'white':''}}>منضم </span>
+        <div className="circle" style={{color: darkMode?'var(--orange)':''}}>10+</div>
+        <span  style={{color: darkMode?'white':''}}>محترف </span>
         <span>اعظاء الفريق</span>
       </div>
     </div>

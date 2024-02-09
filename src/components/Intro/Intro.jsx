@@ -1,11 +1,9 @@
 import React, { useContext } from "react";
 import "./Intro.css";
-import Vector1 from "../../img/Vector1.png";
-import Vector2 from "../../img/Vector2.png";
-import boy from "../../img/boy.png";
-import glassesimoji from "../../img/glassesimoji.png";
-import thumbup from "../../img/thumbup.png";
-import crown from "../../img/crown.png";
+import boy from "../../img/10259340_4401278.svg";
+import glassesimoji from "../../img/9319773_4136916.svg";
+import thumbup from "../../img/man_14186390.png";
+import crown from "../../img/coding_981895.png";
 import FloatinDiv from "../FloatingDiv/FloatingDiv";
 import Github from "../../img/github.png";
 import LinkedIn from "../../img/linkedin.png";
@@ -27,11 +25,11 @@ const Intro = () => {
       <div className="i-left">
         <div className="i-name">
           {/* yahan change hy darkmode ka */}
-          <span style={{ color: darkMode ? "white" : "" }}>مرحبا! نحن   </span>
-          <span>سيبرا برو </span>
-          <span>
-          تتمتع فرق مطوري الواجهات الأمامية بخبرة واسعة في تصميم الويب والتطوير وإنتاج أعمال الجودة، مما يجعلها الخيار المثالي لمشاريعك.
+          <span>   LiteSoft </span>
 
+          <span style={{ color: darkMode ? "white" : "" }}> للانظمة والحلول التقنية </span>
+          <span>
+          نحن شركة برمجيات رائدة في مجال حلول التكنولوجيا. نحن ملتزمون بتقديم حلول تلبي احتياجات السوق وتساعد عملائنا على تحقيق أهدافهم. لدينا فريق من المهندسين والخبراء ذوي الخبرة الذين لديهم فهم عميق للاحتياجات التكنولوجية للشركات.
 
           </span>
         </div>
@@ -47,25 +45,26 @@ const Intro = () => {
       </div>
       {/* right image side */}
       <div className="i-right">
-        <img src={Vector1} alt="" />
-        <img src={Vector2} alt="" />
-        <img src={boy} alt="" />
+        <img  alt="" />
+        <img alt="" />
+        <img height={400} src={boy} alt="" />
         {/* animation */}
         <motion.img
           initial={{ right: "-36%" }}
           whileInView={{ right: "-24%" }}
           transition={transition}
-          src={glassesimoji}
+          
+          height={200}
           alt=""
         />
 
         <motion.div 
-          initial={{ top: "-4%", right: "74%" }}
-          whileInView={{ right: "68%" }}
+          initial={{ top: "-5%", left: "9rem" }}
+          whileInView={{ left: "0rem" }}
           transition={transition}
           className="floating-div"
         >
-          <FloatinDiv img={crown} text1=" ويب " text2=" Developer " />
+          <FloatinDiv img={crown} text1="  نقدم الدعم الفني على مدار 24  " text2="  " />
         </motion.div>
 
         {/* animation */}
@@ -76,7 +75,7 @@ const Intro = () => {
           className="floating-div"
         >
           {/* floatinDiv mein change hy dark mode ka */}
-          <FloatinDiv text1=" مطورين محترفين" text2="سيبرا برو"  img={thumbup} />
+          <FloatinDiv  text1="  فريق من المهندسين والخبراء" text2=" "  img={thumbup} />
         </motion.div>
 
         <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>

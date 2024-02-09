@@ -7,7 +7,7 @@ const FloatinDiv = ({img, text1, text2}) => {
   return (
     // darkMode
     <div className="floatingDiv">
-      <img src={img} alt="" />
+      <img src={img} height={100} alt="" />
       <span>
         {text1}
         <br/>

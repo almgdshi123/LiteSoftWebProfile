@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
 import "./Portfolio.css";
-import { Swiper, SwiperSlide } from "swiper/react"
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import Sidebar from "../../img/sidebar.png";
+import Sidebar from "../../img/sidebar.jpeg";
 import Ecommerce from "../../img/ecommerce.png";
 import HOC from "../../img/hoc.png";
-import MusicApp from "../../img/musicapp.png";
+import MusicApp from "../../img/musicapp.jpg";
 import { themeContext } from "../../Context";
 const Portfolio = () => {
   const theme = useContext(themeContext);
@@ -13,8 +13,8 @@ const Portfolio = () => {
   return (
     <div className="portfolio" id="portfolio">
       {/* heading */}
-      <span style={{color: darkMode?'white': ''}}>بعض اعمالنا </span>
-      <span>Cyber​​Pro</span>
+      <span>لايت سوفت للانظمة والحلول التقنية</span>
+      <span style={{ color: darkMode ? "white" : "" }}>بعض اعمالنا </span>
 
       {/* slider */}
       <Swiper
@@ -24,13 +24,14 @@ const Portfolio = () => {
         className="portfolio-slider"
       >
         <SwiperSlide>
-          <img src={Sidebar} alt="" />
+          <img src={MusicApp} alt="" />
         </SwiperSlide>
+
         <SwiperSlide>
           <img src={Ecommerce} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={MusicApp} alt="" />
+          <img src={Sidebar} alt="" />
         </SwiperSlide>
         <SwiperSlide>
           <img src={HOC} alt="" />

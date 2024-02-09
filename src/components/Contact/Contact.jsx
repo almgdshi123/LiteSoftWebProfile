@@ -36,7 +36,7 @@ const Contact = () => {
         <div className="awesome">
           {/* darkMode */}
           <span style={{color: darkMode?'white': ''}}> تواصل معا </span>
-          <span>فريق سيبر    . </span>
+          <span> فريق لايت سوفت     . </span>
           <div
             className="blur s-blur1"
             style={{ background: "#ABF1FF94" }}

@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import "./Services.css";
 import Card from "../Card/Card";
-import HeartEmoji from "../../img/heartemoji.png";
-import Glasses from "../../img/glasses.png";
+import HeartEmoji from "../../img/programing_1613243.png";
+import Glasses from "../../img/programming-code-signs_59118.png";
 import Humble from "../../img/humble.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
@@ -24,13 +24,11 @@ const Services = () => {
       {/* left side */}
       <div className="awesome">
         {/* dark mode */}
-        <span style={{ color: darkMode ? "white" : "" }}>خدمات فريق </span>
-        <span>Cyber​​Pro</span>
+        <span style={{ color: darkMode ? "white" : "" }}>خدمات شركة </span>
+        <span>LiteSoft</span>
         <spane>
-          نحن فريق من المهندسين والمطورين ذوي الخبرة في مجال تصميم الأنظمة،
-          ولدينا الخبرة
-          <br />
-          هناك العديد من الخدمات التي بقدمها فريق سيبر .
+        نحن نقدم الدعم الفني على مدار 24 ساعة في اليوم و 7 أيام في الأسبوع. لماذا نحن الخيار الأفضل لك؟          <br />
+          هناك العديد من الخدمات التي تقدمها شركة لايت سوفت   .
         </spane>
         <a href={Resume} download>
           <button className="button s-button">تحميل الخدمات </button>
@@ -47,8 +45,8 @@ const Services = () => {
         >
           <Card
             emoji={HeartEmoji}
-            heading={"التصميم"}
-            detail={"Figma, Sketch, Photoshop, Adobe Illustrator, Adobe xd"}
+            heading={" أنظمتنا المحاسبية"}
+            detail={"ادارة محلات الخياطة, ادارة الكهرباء , ادارة المطاعم ,  الانتاج والتصنيع , المراكز الطبية , المحطات "}
           />
         </motion.div>
         {/* second card */}
@@ -59,8 +57,8 @@ const Services = () => {
         >
           <Card
             emoji={Glasses}
-            heading={"التطوير"}
-            detail={"Html, Css, JavaScript, React, Nodejs, Express"}
+            heading={" الخدمات البرمجية"}
+            detail={"تصميم وتطوير المواقع الإلكترونية, تطوير التطبيقات    , صيانة وتحديث المواقع الإلكترونية والتطبيقات"}
           />
         </motion.div>
         {/* 3rd */}
@@ -72,9 +70,9 @@ const Services = () => {
           
           <Card
             emoji={Humble}
-            heading={"UI/UX"}
+            heading={"لماذا تختارنا ؟"}
             detail={
-              "تبحث عن فريق محترف لتلبية احتياجاتك في مجال التصميم؟ إذاً، فأنت في المكان المناسب! فريق التصمي"
+              "  فريق من الخبراء ذوي الخبرة في مختلف المجالات البرمجية , خدمات ما بعد البيع ممتازة"
             }
             color="rgba(252, 166, 31, 0.45)"
           />
