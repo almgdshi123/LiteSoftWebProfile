@@ -12,10 +12,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_2mu5xtl",
-        "template_m5udu2c",
+        "service_ei76eu7",
+        "template_jw6cdte",
         form.current,
-        "VLwg1ltOWvnCYAiK_"
+        "LHx0r-rywA_gNhQQs"
       )
       .then(
         (result) => {
@@ -35,8 +35,8 @@ const Contact = () => {
       <div className="w-left">
         <div className="awesome">
           {/* darkMode */}
-          <span style={{color: darkMode?'white': ''}}> تواصل معا </span>
-          <span> فريق لايت سوفت     . </span>
+          <span style={{color: darkMode?'white': ''}}> تواصل مع </span>
+          <span> فريق لايت سوفت   </span>
           <div
             className="blur s-blur1"
             style={{ background: "#ABF1FF94" }}
@@ -48,9 +48,11 @@ const Contact = () => {
         <form ref={form} onSubmit={sendEmail}>
           <input type="text" name="user_name" className="user"  placeholder="الاسم"/>
           <input type="email" name="user_email" className="user" placeholder="الايميل"/>
+          <input type="number" name="user_number" className="user" placeholder="رقم الهاتف"/>
+
           <textarea name="message" className="user" placeholder="محتوى الرسالة"/>
           <input type="submit" value="ارسال" className="button"/>
-          <span>{done && "Thanks for Contacting me"}</span>
+          <span>{done && "شكرا لك على تواصلك لايت سوفت"}</span>
           <div
             className="blur c-blur1"
             style={{ background: "var(--purple)" }}
